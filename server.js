@@ -35,6 +35,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost/posts");
+mongoose.connect("mongodb://heroku_63p7fk4k:rqtm9ei0co19kg0nftnkopiav2@ds155651.mlab.com:55651/heroku_63p7fk4k");
 
 db.on("error", function(error){
   console.log("Mongoose error: " + error);
