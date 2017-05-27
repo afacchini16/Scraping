@@ -23,7 +23,7 @@ var db = mongojs(databaseURL, collections);
 var Post = require('./Post.js');
 var Promise = require("bluebird");
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
