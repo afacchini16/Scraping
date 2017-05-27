@@ -1,0 +1,26 @@
+input {
+    margin-top:0.5%;
+    border-radius: 2px;
+}
+.submit-button {
+    margin-left: 4%;
+    margin-top: 1%;
+}
+i {
+    margin-right:5px;
+    color:blue;
+    margin-left:-1.7%;
+}
+.each-container {
+    /*width:45%;*/
+    /*float:left;
+    /*border: 2px black solid;*/
+    margin:5px;
+    height:40%;
+    
+}
+.col-md-5{
+    border: 2px black solid;
+    margin:5px;
+    background-color: rgb(210, 210, 210);
+}

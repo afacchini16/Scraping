@@ -1,0 +1,28 @@
+<h1>Craigslist thing</h1>
+<div class = "results-container">
+    <div class = "row">
+        
+                <ul>
+                    
+                    {{#each posts}}
+                    <div class = "col-md-5">
+                    <div class = "each-container">
+                    <li><h3>Title: {{this.title}}</h3></li>
+                    <li>Price: {{this.price}}</li>
+                    <li>Posted: {{this.time}}</li>
+                    <li>Link: <a href = {{this.link}}> {{this.link}}</a></li>
+                    <li>Comments: </li>
+                    <li>Enter a comment: <br>
+                        <form action = "/submit" method = "post" id = "comment-form">
+                            <i class = "glyphicon glyphicon-th-list"></i><input type = "text" id = "comment-box" name = "submit" placeholder = "Enter a comment..."><br>
+                            <input type = "submit" class = "submit-button">
+                        </form>
+                    </li>
+                    <br>
+                    </div>
+                    </div>
+                    {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
